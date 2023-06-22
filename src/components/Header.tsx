@@ -28,7 +28,7 @@ function Header({ user, isError, isLoading }: Props) {
     <header>
       <nav className="nav-container">
         <img src={logo} alt="Aerolab logo" />
-        {isLoading && <Loader />}
+        {isLoading && <Loader size={0} position={"right"} />}
         {isError && (
           <div className="error-container">
             <img className="error" src={errorIcon} alt="error icon" />
