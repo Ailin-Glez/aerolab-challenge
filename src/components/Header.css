@@ -1,0 +1,60 @@
+.nav-container {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  padding: 0.5rem 2rem;
+  background-color: white;
+}
+
+.user-details {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.user-details p {
+  margin-right: 1rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  background-color: rgb(227, 228, 228);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+}
+
+.badge span {
+  margin: 3px;
+}
+
+.img-container {
+  width: 100vw;
+  height: 400px;
+}
+
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 3rem;
+  color: white;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.error-container {
+  display: flex;
+}
+
+.error {
+  width: 25px;
+  color: red;
+  margin-right: 10px;
+}

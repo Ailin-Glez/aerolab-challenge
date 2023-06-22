@@ -3,7 +3,6 @@ export interface User {
   name: string;
   points: number;
   redeemHistory: RedeemHistory[];
-  createDate: string;
 }
 
 export interface RedeemHistory {
@@ -15,7 +14,7 @@ export interface RedeemHistory {
   createDate: string;
 }
 
-export interface Products {
+export interface ProductItem {
   _id: string;
   name: string;
   cost: number;
