@@ -14,3 +14,8 @@ Users have an undetermined amount of points accumulated, and each product is wor
 - When the user doesn’t have enough points for a product, they should be able to see how many more points they need to claim it.
 - The user should not be able to redeem a product for which they don’t have enough points.
 - When the user clicks on the Redeem now button, the system should automatically deduct the item’s price from the users’ points.
+
+
+### Design
+This is an example of the expected webpage
+![webpage design](./src/assets/example.jpg)
