@@ -1,16 +1,20 @@
-import './Header.css';
+import "./Header.css";
 
-import logo from '../assets/aerolab-logo.svg';
-import coin from '../assets/coin.svg';
-import errorIcon from '../assets/error.svg';
-import header from '../assets/header.png';
-import { User } from '../models/aerolab-models';
-import Loader from './Loader';
+import { useContext } from "react";
+
+import { UserContext } from "../App";
+import logo from "../assets/aerolab-logo.svg";
+import coin from "../assets/coin.svg";
+import errorIcon from "../assets/error.svg";
+import header from "../assets/header.png";
+import { User } from "../models/aerolab-models";
+import Loader from "./Loader";
 
 interface Props {
   user: User | null;
   isError: boolean;
   isLoading: boolean;
+  onAddUserPoints: () => void;
 }
 
 const mockUser: User = {
@@ -20,7 +24,9 @@ const mockUser: User = {
   redeemHistory: [],
 };
 
-function Header({ user, isError, isLoading }: Props) {
+function Header({ user, isError, isLoading, onAddUserPoints }: Props) {
+  const { userCoins } = useContext(UserContext);
+
   const showUserData = !isError && !isLoading;
   const finalUser = !user ? mockUser : user;
 
@@ -39,9 +45,12 @@ function Header({ user, isError, isLoading }: Props) {
           <div className="user-details">
             <p>{finalUser.name}</p>
             <div className="badge">
-              <span>{finalUser.points}</span>
+              <span>{userCoins}</span>
               <img src={coin} alt="coin" />
             </div>
+            <button className="add-coins" onClick={onAddUserPoints}>
+              +
+            </button>
           </div>
         )}
       </nav>
