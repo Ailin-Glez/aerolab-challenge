@@ -5,7 +5,7 @@ export interface User {
   redeemHistory: RedeemHistory[];
 }
 
-export interface RedeemHistory {
+interface RedeemHistory {
   productId: string;
   name: string;
   cost: 200;
@@ -25,4 +25,10 @@ export interface ProductItem {
 interface Image {
   url: string;
   hdUrl: string;
+}
+
+export interface Config {
+  endpoint: string;
+  method?: string;
+  body?: string;
 }
