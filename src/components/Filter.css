@@ -1,0 +1,52 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 1rem 10rem;
+  height: 2.5rem;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.divider-v {
+  border-left: 2px solid var(--gray);
+  height: 50px;
+}
+
+.filter {
+  color: var(--gray-darkest);
+  background-color: var(--gray);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.active {
+  color: white;
+  background-color: var(--blue);
+}
+
+.arrow {
+  margin: 5px;
+  width: 40px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.right:hover {
+  content: url("../assets/arrow-right-color.svg");
+}
+
+.left:hover {
+  content: url("../assets/arrow-left-color.svg");
+}
