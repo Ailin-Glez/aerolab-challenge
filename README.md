@@ -15,6 +15,8 @@ Users have an undetermined amount of points accumulated, and each product is wor
 - The user should not be able to redeem a product for which they don’t have enough points.
 - When the user clicks on the Redeem now button, the system should automatically deduct the item’s price from the users’ points.
 
+## Live Demo
+[Here](https://aerolabchallenge.docs.apiary.io/#) is the link for the live demo
 
 ### Design
 This is an example of the expected webpage
