@@ -1,0 +1,107 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 220px;
+  padding: 0.8rem 2rem;
+  box-shadow: 3px 3px 5px var(--gray);
+  overflow: hidden;
+}
+
+.hover-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  background-color: var(--blue-transparent);
+}
+
+.card:hover .hover-div:not(.needed-coins) {
+  right: 0;
+}
+
+.card:hover:not(.card-no-redeem) {
+  bottom: 10px;
+}
+
+.cart-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-icon,
+.needed-coins {
+  align-self: flex-end;
+}
+
+.category {
+  color: var(--gray-dark);
+  padding-top: 2px;
+}
+
+.product-name,
+.category {
+  margin: 0;
+}
+
+.small-coin {
+  width: 28px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+}
+
+.needed-coins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  background-color: var(--gray-transparent);
+}
+
+.needed-coins span {
+  margin-left: 3px;
+}
+
+.redeem-btn {
+  border: none;
+  color: var(--gray-darkest);
+  background-color: white;
+  padding: 0.8rem 3rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cost {
+  /* position: relative;
+  bottom: 10px; */
+  color: white;
+  font-size: 1.5rem;
+  /* font-weight: 600; */
+}
+
+.white {
+  position: relative;
+  bottom: 50px;
+  right: 26px;
+}
