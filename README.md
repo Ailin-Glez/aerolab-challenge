@@ -16,7 +16,7 @@ Users have an undetermined amount of points accumulated, and each product is wor
 - When the user clicks on the Redeem now button, the system should automatically deduct the item’s price from the users’ points.
 
 ## Live Demo
-[Here](https://aerolabchallenge.docs.apiary.io/#) is the link for the live demo
+[Here](https://aerolab-challenge-ailin-glez.netlify.app/) is the link for the live demo
 
 ### Design
 This is an example of the expected webpage
